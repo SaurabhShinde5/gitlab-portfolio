@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <button class="scroll-top__btn">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+    <!-- Header starts here -->
+
+    <header class="header">
+      <nav class="nav" id="nav">
+        <div class="nav__logo">SAURABH</div>
+        <div class="nav__list"></div>
+        <a id="menu-icon" class="menu-icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Header ends here -->
+
+    <!-- Home section starts here -->
+
+    <section class="home" id="home">
+      <div class="home__content">
+        <h2 class="home__name">Hi, I Am Saurabh Shinde</h2>
+        <h1 class="home__position">Front-end Developer</h1>
+        <h2 class="home__subskills">A Web Designer and Web Developer</h2>
+        <div class="home__btn">
+          <a href="#resume"
+            ><button class="btn btn--yellow">Learn more &rarr;</button></a
+          >
+          <!-- <a href=""><button class="btn home__btn--default">HIRE ME</button></a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Home section ends here -->
+
+    <!-- resume section starts here -->
+    <section class="resume" id="resume">
+      <picture>
+        <img src="assets/avatar.svg" alt="profile photo" />
+      </picture>
+      <div class="resume__info">
+        <div class="tooltip">HELLO</div>
+        <h2 class="info__title">
+          I'M <span class="info__name">Saurabh Shinde</span>
+        </h2>
+        <div class="info__content">
+          <a
+            href="mailto:saurabhshinde1224@gmail.com"
+            class="info__content__item"
+          >
+            <i class="fa-solid fa-envelope info__icon"></i
+            >saurabhshinde1224@gamil.com
+          </a>
+          <a
+            href="https://github.com/SaurabhShinde5"
+            target="_blank"
+            class="info__content__item"
+          >
+            <i class="fa-brands fa-github"></i>
+            SaurabhShinde5</a
+          >
+          <p class="info__content__item">
+            <a
+              href="https://www.linkedin.com/in/saurabh-shinde28/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin info__icon"></i>Saurabh shinde</a
+            >
+          </p>
+          <a href="tel:+91 8766886640" class="info__content__item"
+            ><i class="fa-solid fa-phone info__icon"></i>+91 8766886640</a
+          >
+          <p class="info__content__item">
+            <i class="fa-solid fa-location-arrow info__icon"></i>Pune,
+            Maharashtra
+          </p>
+        </div>
+        <div class="info__btns">
+          <a
+            href="assets/saurabh's-resume.pdf"
+            download="saurabh's-resume.pdf"
+            class="info__btn"
+          >
+            <i class="fa-solid fa-download"></i>DOWNLOAD RESUME
+          </a>
+          <a href="#contact" class="info__btn"
+            ><i class="fa-solid fa-envelope"></i>CONTACT ME</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- resume section ends here -->
+
+    <!-- about section starts here -->
+
+    <section id="about" class="about">
+      <div class="about__content">
+        <h1>A STORY ABOUT ME</h1>
+        <p class="about__position">DEVELOPER | DESIGNER | PROGRAMMER</p>
+        <p class="about__description">
+          As a front-end developer, I have experience in developing and
+          designing websites. My skills in HTML, CSS, JavaScript and React allow
+          me to create websites that are not only visually appealing but also
+          functional. I am a strong team player, but I can also work
+          independently :)
+        </p>
+        <div class="container__progressbars">
+          <div class="progressbar">
+            <svg class="progressbar__svg">
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                class="progressbar__svg-circle circle-git"
+              ></circle>
+            </svg>
+            <span class="progressbar__text">GIT</span>
+          </div>
+          <div class="progressbar">
+            <svg class="progressbar__svg">
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                class="progressbar__svg-circle circle-html"
+              ></circle>
+            </svg>
+            <span class="progressbar__text">HTML5</span>
+          </div>
+          <div class="progressbar">
+            <svg class="progressbar__svg">
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                class="progressbar__svg-circle circle-css"
+              ></circle>
+            </svg>
+            <span class="progressbar__text">CSS<br />(SCSS)</span>
+          </div>
+          <div class="progressbar">
+            <svg class="progressbar__svg">
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                class="progressbar__svg-circle circle-js"
+              ></circle>
+            </svg>
+            <span class="progressbar__text">JavaScript</span>
+          </div>
+          <div class="progressbar">
+            <svg class="progressbar__svg">
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                class="progressbar__svg-circle circle-ts"
+              ></circle>
+            </svg>
+            <span class="progressbar__text">TypeScript</span>
+          </div>
+          <div class="progressbar">
+            <svg class="progressbar__svg">
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                class="progressbar__svg-circle circle-react"
+              ></circle>
+            </svg>
+            <span class="progressbar__text">React</span>
+          </div>
+        </div>
+      </div>
+      <picture>
+        <img src="assets/avatar.svg" alt="about-image" />
+      </picture>
+    </section>
+
+    <!-- about section ends here -->
+
+    <!-- education section starts here -->
+
+    <section class="education" id="education">
+      <h2 class="education__heading">EDUCATION DETAIL</h2>
+      <div class="education__content"></div>
+    </section>
+
+    <!-- education section ends here -->
+
+    <!-- work section starts here -->
+
+    <section class="work" id="work">
+      <h2 class="work__heading">WORK</h2>
+      <div class="work__portfolio">
+        <ul class="portfolio__tags">
+          <li data-filter="all" class="tag__item">ALL</li>
+          <li data-filter="mini-project" class="tag__item">MINI PROJECT</li>
+          <li data-filter="games" class="tag__item">GAMES</li>
+          <li data-filter="project" class="tag__item">PROJECTS</li>
+        </ul>
+        <div class="portfolio__cards">
+          <div data-item="mini-project" class="card">
+            <picture>
+              <img src="assets/calculator.jpeg" alt="card image" />
+            </picture>
+            <h4 class="card__title">Calculator</h4>
+            <p class="card__detail">#html #css #js</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              ipsa repudiandae saepe illum quas excepturi labore dolore! Facilis
+              voluptatem deserunt earum totam hic tenetur.
+            </p>
+            <div class="card__btn">
+              <a
+                href="calculator/index.html"
+                target="_blank"
+                class="card__button"
+                >View</a
+              >
+              <a
+                href="https://gitlab.com/mean-july-2022/mean-saurabh/-/tree/main/calculator"
+                target="_blank"
+                class="card__button"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="card" data-item="project">
+            <picture>
+              <img src="assets/forms.png" alt="card image" />
+            </picture>
+            <h4 class="card__title">X-FORMS</h4>
+            <p class="card__detail">#js #scss #css3 #validation #api</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              ipsa repudiandae saepe illum quas excepturi labore dolore! Facilis
+              voluptatem deserunt earum totam hic tenetur.
+            </p>
+            <div class="card__btn">
+              <a href="x-form/sign-up.html" target="_blank" class="card__button"
+                >View</a
+              >
+              <a
+                href="https://gitlab.com/mean-july-2022/mean-saurabh/-/tree/main/x-form"
+                target="_blank"
+                class="card__button"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="card" data-item="mini-project">
+            <picture>
+              <img src="assets/cv.jpeg" alt="card image" />
+            </picture>
+            <h4 class="card__title">X-PROFILE</h4>
+            <p class="card__detail">#semantics #responsiveness #css</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              ipsa repudiandae saepe illum quas excepturi labore dolore! Facilis
+              voluptatem deserunt earum totam hic tenetur.
+            </p>
+            <div class="card__btn">
+              <a
+                href="x-profile/responsive/index.html"
+                target="_blank"
+                class="card__button"
+                >View</a
+              >
+              <a
+                href="https://gitlab.com/mean-july-2022/mean-saurabh/-/tree/main/x-profile/responsive"
+                target="_blank"
+                class="card__button"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="card" data-item="project">
+            <picture>
+              <img
+                src="assets/form builder.jpg"
+                alt="card image"
+                height="200"
+              />
+            </picture>
+            <h4 class="card__title">X-PAGE-BUILDER</h4>
+            <p class="card__detail">#js #localstorage #drag&drop</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              ipsa repudiandae saepe illum quas excepturi labore dolore! Facilis
+              voluptatem deserunt earum totam hic tenetur.
+            </p>
+            <div class="card__btn">
+              <a
+                href="my-form-builder/index.html"
+                target="_blank"
+                class="card__button"
+                >View</a
+              >
+              <a
+                href="https://gitlab.com/mean-july-2022/mean-saurabh/-/tree/main/my-form-builder"
+                target="_blank"
+                class="card__button"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="card" data-item="games">
+            <picture>
+              <img src="assets/tic-tac-toe.png" alt="card image" height="200" />
+            </picture>
+            <h4 class="card__title">TIC-TAC-TOE</h4>
+            <p class="card__detail">#html #js #tic-tac-toe</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              ipsa repudiandae saepe illum quas excepturi labore dolore! Facilis
+              voluptatem deserunt earum totam hic tenetur.
+            </p>
+            <div class="card__btn">
+              <a
+                href="tic-tac-toe/index.html"
+                target="_blank"
+                class="card__button"
+                >View</a
+              >
+              <a
+                href="https://gitlab.com/mean-july-2022/mean-saurabh/-/tree/main/tic-tac-toe"
+                target="_blank"
+                class="card__button"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="card" data-item="games">
+            <picture>
+              <img src="assets/dice.jpg" alt="card image" height="200" />
+            </picture>
+            <h4 class="card__title">DICE GAME</h4>
+            <p class="card__detail">#dice-game #DOM-manipulation</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              ipsa repudiandae saepe illum quas excepturi labore dolore! Facilis
+              voluptatem deserunt earum totam hic tenetur.
+            </p>
+            <div class="card__btn">
+              <a
+                href="dice-game/index.html"
+                target="_blank"
+                class="card__button"
+                >View</a
+              >
+              <a
+                href="https://gitlab.com/mean-july-2022/mean-saurabh/-/tree/main/dice-game"
+                target="_blank"
+                class="card__button"
+                >Source</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials">
+        <h2 class="testimonial__heading">MY GIT HISTORY</h2>
+        <picture>
+          <img src="assets/git-history.jpeg" alt="my git history" />
+        </picture>
+      </div>
+    </section>
+
+    <!-- work section ends here -->
+
+    <!-- blog section starts here -->
+
+    <section class="blog" id="blog">
+      <h2 class="blog__heading">FUN WITH IMAGES</h2>
+      <div class="fun-card__container">
+        <div class="fun-card">
+          <picture class="slider-container">
+            <img
+              src="assets/slider-2.jpeg"
+              alt="slider-1 img"
+              class="slider-fix card-img"
+            />
+            <img
+              src="assets/slider-1.jpeg"
+              alt="slider-2 img"
+              id="sliding-img"
+              class="card-img"
+            />
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="slider"
+              id="slider"
+            />
+          </picture>
+          <div class="commerce__content">
+            <h4>Image comparison slider</h4>
+            <p>#html #css #js</p>
+          </div>
+        </div>
+        <div class="fun-card">
+          <picture id="zoom-box" class="zoom-box">
+            <img
+              id="main-img"
+              src="assets/zoom.jpeg"
+              alt="magnify img"
+              class="card-img"
+            />
+            <div id="large-img"></div>
+          </picture>
+          <div class="commerce__content">
+            <h4>Image magnifying glass</h4>
+            <p>#html #css #js</p>
+          </div>
+        </div>
+        <div class="fun-card">
+          <picture class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img
+                  src="assets/zoom.jpeg"
+                  alt="flip img"
+                  class="card-img flip-img"
+                />
+              </div>
+              <div class="flip-box-back">
+                <h4>Flipped side</h4>
+                <p>flipped on hover</p>
+              </div>
+            </div>
+          </picture>
+          <div class="commerce__content">
+            <h4>Image flip on hover</h4>
+            <p>#html #css</p>
+          </div>
+        </div>
+        <div class="fun-card">
+          <picture>
+            <img
+              src="assets/shake.jpeg"
+              alt="shake img"
+              class="shake-img card-img"
+            />
+          </picture>
+          <div class="apps__content">
+            <h3>Image shake animation</h3>
+            <p>#html #css</p>
+          </div>
+        </div>
+        <div class="fun-card">
+          <picture class="change-box">
+            <img
+              src="assets/change.jpeg"
+              alt="change-image-1"
+              class="change-initial card-img"
+            />
+            <img
+              src="assets/shake.jpeg"
+              alt="change img"
+              class="changed-img card-img"
+            />
+          </picture>
+          <div class="apps__content">
+            <h3>Image change on hover</h3>
+            <p>#html #css</p>
+          </div>
+        </div>
+        <div class="fun-card">
+          <picture class="overlay-drop">
+            <div class="overlay-content">Hello World</div>
+            <img
+              src="assets/slide-down.jpeg"
+              alt="overlay img"
+              class="card-img"
+            />
+          </picture>
+          <div class="apps__content">
+            <h3>Image overlay on hover</h3>
+            <p>#html #css</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section ends here -->
+
+    <!-- contact section starts here -->
+
+    <section class="contact" id="contact">
+      <h2 class="contact__heading">CONTACT ME</h2>
+      <div class="contact__container">
+        <div class="container__details">
+          <div class="detail">
+            <a href="tel:+91 8766886640"
+              ><i class="fa-solid fa-phone icon"></i
+            ></a>
+            <div class="detail__content">
+              <p class="detail__heading">Call Me</p>
+              <p class="detail__description">+91 8766886640</p>
+            </div>
+          </div>
+          <div class="detail">
+            <a href="mailto:saurabhshinde1224@gmail.com"
+              ><i class="fa-solid fa-envelope icon"></i
+            ></a>
+            <div class="detail__content">
+              <p class="detail__heading">Email Me</p>
+              <p class="detail__description">saurabhshinde1224@gmail.com</p>
+            </div>
+          </div>
+          <div class="detail">
+            <i class="fa-solid fa-paper-plane icon"></i>
+            <div class="detail__content">
+              <p class="detail__heading">Office Address</p>
+              <p class="detail__description">Pune, Maharashtra, India</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form">
+          <div class="form__inputs">
+            <div class="inputs">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              />
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+          </div>
+          <div class="form__inputs">
+            <div class="inputs">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+              />
+              <input
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Company"
+              />
+            </div>
+          </div>
+          <textarea
+            name="messege"
+            id="messege"
+            rows="7"
+            placeholder="your messege"
+          ></textarea>
+          <button class="contact__form__submit" onclick="preventDefault()">
+            SUBMIT
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- contact section ends here -->
+
+    <!-- footer starts here -->
+
+    <footer class="footer">
+      <div class="footer__content">
+        <h4 class="footer__title">
+          I AM <br />
+          <span class="title--bold">SAURABH</span>
+          <span class="footer__subtext">A front end developer</span>
+        </h4>
+        <div class="social-icon__list">
+          <a href="https://gitlab.com/saurabhshinde1224" target="_blank"
+            ><i class="fa-brands fa-gitlab"></i
+          ></a>
+          <a href="https://github.com/SaurabhShinde5" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/saurabh-shinde28/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <p class="footer__subcontent">
+        Made with ❤️ by
+        <span class="subcontent--bold">Saurabh</span>
+      </p>
+    </footer>
+
+    <!-- footer starts here -->
+
+    <script src="js/script.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/component.js"></script>
+  </body>
+</html>

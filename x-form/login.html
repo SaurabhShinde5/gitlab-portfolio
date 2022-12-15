@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="login" id="login">
+      <section class="hero">
+        <div class="image-slider-box">
+          <div class="sliding-img">
+            <h2 class="image-title">
+              We make
+              <div class="image-subtext">Healing simple.</div>
+            </h2>
+            <picture class="login-hero__img">
+              <img
+                src="images/sliding-img1.png"
+                alt="image of elderly couple"
+              />
+            </picture>
+            <div class="image-logo">
+              <img src="images/Group 260.png" alt="image logo" />
+            </div>
+          </div>
+          <div class="sliding-img">
+            <h2 class="image-title">
+              This is
+              <div class="image-subtext">healthcare reinvented</div>
+            </h2>
+            <picture class="login-hero__img">
+              <img
+                src="images/sliding-img4.png"
+                alt="happy family having breakfast"
+              />
+            </picture>
+            <div class="image-logo">
+              <img src="images/Group 260.png" alt="image logo" />
+            </div>
+          </div>
+          <div class="sliding-img">
+            <h2 class="image-title">
+              the missing link to health
+              <span class="image-subtext">is here</span>
+            </h2>
+            <picture class="login-hero__img">
+              <img
+                src="images/sliding-img2.png"
+                alt="family is having breakfast"
+              />
+            </picture>
+            <div class="image-logo">
+              <img src="images/Group 260.png" alt="image logo" />
+            </div>
+          </div>
+          <div class="sliding-img">
+            <h2 class="image-title">
+              Affordable
+              <br />
+              access to
+              <div class="image-subtext">Lifestyle <br />Medicine</div>
+            </h2>
+            <picture class="login-hero__img">
+              <img src="images/sliding-img3 .png" alt="woman holding a child" />
+            </picture>
+            <div class="image-logo">
+              <img src="images/Group 260.png" alt="image logo" />
+            </div>
+          </div>
+        </div>
+        <div class="image-slideshow-dot">
+          <span class="dot" onclick="currentImage(0)"></span>
+          <span class="dot" onclick="currentImage(1)"></span>
+          <span class="dot" onclick="currentImage(2)"></span>
+          <span class="dot" onclick="currentImage(3)"></span>
+        </div>
+      </section>
+      <aside class="login-form">
+        <picture class="form-logo">
+          <img src="images/signup-form-logo.png" alt="form logo image" />
+        </picture>
+        <form action="" class="login__form">
+          <label for="email" class="login__label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="youremailaddress@goeshere"
+            class="login__input"
+          />
+          <label for="password" class="login__label">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="**********"
+            class="login__input"
+          />
+          <button class="login__btn">Log in</button>
+          <div class="login__checkbox">
+            <div class="remember-me">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <label for="checkbox">Remember me</label>
+            </div>
+            <div class="forgot-pass">
+              <a href="forgot-pass.html">Forgot password?</a>
+            </div>
+          </div>
+        </form>
+      </aside>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

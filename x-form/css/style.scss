@@ -1,0 +1,156 @@
+@import "fonts";
+@import "variables";
+@import "presets";
+@import "hero-img";
+@import "login";
+@import "forgot-pass";
+
+.sign-up {
+  display: flex;
+  justify-content: space-between;
+  max-height: 100vh;
+  @media screen and(max-width:992px) {
+    justify-content: center;
+    overflow: auto;
+  }
+  .form__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+    max-width: 80%;
+    @media screen and(max-width:992px) {
+      position: absolute;
+      padding: 0;
+    }
+    .form__logo {
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+      img {
+        max-width: 80%;
+      }
+    }
+    .sign-up-form {
+      padding: 1rem 2rem;
+      max-width: 100%;
+      .form-control {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+        position: relative;
+        label {
+          display: inline-block;
+          margin-bottom: 0.5rem;
+          font-size: 1.8rem;
+        }
+        input {
+          border: 2px solid $border-color;
+          border-radius: 4px;
+          display: block;
+          padding: 1rem;
+          font-size: 1.4rem;
+          &:focus {
+            border-color: lightsalmon;
+          }
+        }
+        i {
+          position: absolute;
+          top: 4rem;
+          right: 1rem;
+          visibility: hidden;
+        }
+        small {
+          visibility: hidden;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          font-size: 1.6rem;
+        }
+      }
+      .join {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        line-height: 120%;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.005em;
+        color: $primary-color;
+        background: $secondary-color;
+        border-radius: 0.8rem;
+        width: 100%;
+        padding: 2rem 0;
+        border: 2px solid $secondary-color;
+        &:hover {
+          background: transparent;
+          color: $secondary-color;
+        }
+      }
+      .form-control.success {
+        input {
+          border-color: #2ecc71;
+        }
+        i.fa-check-circle {
+          color: #2ecc71;
+          visibility: visible;
+        }
+      }
+      .form-control.error {
+        input {
+          border-color: #e74c3c;
+        }
+        i.fa-exclamation-circle {
+          color: #e74c3c;
+          visibility: visible;
+        }
+        small {
+          color: #e74c3c;
+          visibility: visible;
+        }
+      }
+    }
+    .terms {
+      display: flex;
+      gap: 0.7rem;
+      margin-bottom: 1.5rem;
+      label {
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+    }
+    // }
+    .already-signup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: $secondary-color;
+      }
+      .signup-login-btn {
+        border: 0.15rem solid $secondary-color;
+        border-radius: 0.8rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.005em;
+        background: none;
+        cursor: pointer;
+        padding: 2rem 4rem;
+        &:hover {
+          background: $secondary-color;
+          color: white;
+        }
+        // margin-bottom: 2rem;
+      }
+    }
+  }
+}

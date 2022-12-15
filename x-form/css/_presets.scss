@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  // overflow: hidden;
+}
+body {
+  height: 100%;
+  background: $primary-bg;
+}
+html {
+  font-size: 10px;
+}
+button {
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  display: none;
+}

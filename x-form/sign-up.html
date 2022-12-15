@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>sign-up</title>
+  </head>
+  <body>
+    <main class="sign-up" id="sign-up">
+      <section class="hero">
+        <div class="sliding-img--1">
+          <picture>
+            <img
+              src="images/sliding-img1.png"
+              alt="sign up image"
+              class="hero-img"
+            />
+          </picture>
+          <div class="hero__text">
+            <h2>
+              We make <br />
+              <span class="hero__subtext">healing simple.</span>
+            </h2>
+          </div>
+          <div class="hero__logo">
+            <picture>
+              <img src="images/Group 260.png" alt="sign up logo" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <aside class="form__section">
+        <picture class="form__logo">
+          <img src="images/signup-form-logo.png" alt="logo of 10xtech" />
+        </picture>
+          <form action="" class="sign-up-form"  id="sign-up-form">
+            <div class="form-control ">
+              <label for="username">Name</label>
+              <input type="text" name="username" id="username" placeholder = "Name here" >
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error here</small>
+            </div>
+            <div class="form-control ">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder = "Email here" >
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error here</small>
+            </div>
+            <div class="form-control">
+              <label for="password">password</label>
+              <input type="password" name="password" id="password" placeholder = "**********" minlength="8" >
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error here</small>
+            </div>
+            <button class="join">Join us</button>
+          </form>
+          <div class="terms">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >I have read and accepted the
+              <a href="">terms & conditions</a></label
+            >
+          </div>
+        </form>
+        <div class="already-signup">
+          <p>Already have an account?</p>
+          <a href="login.html"
+            ><button class="signup-login-btn">Log in</button></a
+          >
+        </div>
+      </aside>
+    </main>
+    <script src="js/validation.js"></script>
+  </body>
+</html>

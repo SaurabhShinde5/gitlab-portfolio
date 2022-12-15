@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100%;
+  background: #f7f7f7;
+}
+
+html {
+  font-size: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hero {
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    overflow: auto;
+  }
+}
+.hero .hero-img {
+  max-height: 100vh;
+  min-width: 55vw;
+}
+@media screen and (max-width: 992px) {
+  .hero .hero-img {
+    width: 100vw;
+    min-height: 100vh;
+    opacity: 0.5;
+  }
+}
+.hero .hero__text {
+  position: absolute;
+  top: 0;
+  color: #d2deea;
+  font-weight: 800;
+  margin: 3rem 4rem;
+  line-height: 8rem;
+  font-size: 5rem;
+}
+.hero .hero__text .hero__subtext {
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .hero .hero__text {
+    display: none;
+  }
+}
+.hero .hero__logo {
+  position: absolute;
+  bottom: 0;
+  padding: 0 0 6.5rem 6.8rem;
+}
+@media screen and (max-width: 992px) {
+  .hero .hero__logo {
+    display: none;
+  }
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .login {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.hero .image-slideshow-dot {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 2%;
+}
+.hero .image-slideshow-dot .dot {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.hero .image-slideshow-dot .dot:hover {
+  background: #515d82;
+}
+
+.image-slider-box {
+  max-height: 100vh;
+  position: relative;
+  display: flex;
+}
+.image-slider-box .sliding-img {
+  display: none;
+}
+.image-slider-box .sliding-img .image-title {
+  position: absolute;
+  top: 0;
+  color: #d2deea;
+  font-size: 7rem;
+  font-weight: 800;
+  margin: 3rem 4rem;
+}
+.image-slider-box .sliding-img .image-title .image-subtext {
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .image-slider-box .sliding-img .image-title {
+    display: none;
+  }
+}
+.image-slider-box .sliding-img .login-hero__img img {
+  max-height: 100vh;
+  min-width: 55vw;
+}
+@media screen and (max-width: 992px) {
+  .image-slider-box .sliding-img .login-hero__img img {
+    width: 100vw;
+    min-height: 100vh;
+    opacity: 0.5;
+  }
+}
+.image-slider-box .sliding-img .image-logo {
+  position: absolute;
+  bottom: 0;
+  padding: 0 0 6.5rem 2rem;
+}
+@media screen and (max-width: 992px) {
+  .image-slider-box .sliding-img .image-logo {
+    display: none;
+  }
+}
+
+.active {
+  background: #515d82;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+@media screen and (max-width: 992px) {
+  .login-form {
+    position: absolute;
+  }
+}
+.login-form .login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  min-width: 40rem;
+}
+@media screen and (max-width: 992px) {
+  .login-form .login__form {
+    min-width: 30vw;
+  }
+}
+.login-form .login__form .login__label {
+  color: #515d82;
+  font-weight: 700;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  margin-top: 1.5rem;
+}
+.login-form .login__form .login__input {
+  border-radius: 0.8rem;
+  border: 0.1rem solid #d2deea;
+  padding: 2rem 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #788292;
+}
+.login-form .login__form .login__btn {
+  font-size: 1.5rem;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #fff;
+  background-color: #515d82;
+  padding: 2rem 4rem;
+  border-radius: 0.8rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border: 0.2rem solid #515d82;
+}
+.login-form .login__form .login__btn:hover {
+  background: transparent;
+  color: #515d82;
+}
+.login-form .login__checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-form .login__checkbox .remember-me {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.forgot-pass {
+  display: flex;
+  justify-content: space-between;
+  max-height: 100vh;
+}
+@media screen and (max-width: 992px) {
+  .forgot-pass {
+    justify-content: center;
+    overflow: auto;
+  }
+}
+.forgot-pass .form__section__forgot-pass {
+  margin: auto;
+  padding: 2rem;
+  max-width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .forgot-pass .form__section__forgot-pass {
+    position: absolute;
+    padding: 0;
+    max-width: 80%;
+  }
+}
+.forgot-pass .form__section__forgot-pass .form__logo {
+  max-width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+.forgot-pass .form__section__forgot-pass .form__logo img {
+  max-width: 80%;
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container {
+  padding: 2rem;
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__content .forgot-pass__content--heading {
+  color: #515d82;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #d2deea;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 992px) {
+  .forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__content .forgot-pass__content--heading {
+    border-color: white;
+  }
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__content .forgot-pass__content--subtitle {
+  color: #788292;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__form {
+  display: flex;
+  flex-direction: column;
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__form label {
+  padding: 1rem 0 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #515d82;
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__form input {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #788292;
+  border: 0.2rem solid #d2deea;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0.5rem;
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__form .forgot-send__button {
+  background: #515d82;
+  border: 2px solid #515d82;
+  color: #f7f7f7;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  border-radius: 0.4rem;
+  padding: 1.5rem 0.5rem;
+  margin-bottom: 1rem;
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__form .forgot-send__button:hover {
+  background: transparent;
+  color: #515d82;
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__form .forgot-cancel__button {
+  background: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #515d82;
+  border: 0.2rem solid #515d82;
+  border-radius: 0.8rem;
+  padding: 1.5rem 0.5rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+.forgot-pass .form__section__forgot-pass .forgot-pass__container .forgot-pass__form .forgot-cancel__button:hover {
+  background: #d2deea;
+  color: #515d82;
+  border-color: #d2deea;
+}
+
+.sign-up, .forgot-pass {
+  display: flex;
+  justify-content: space-between;
+  max-height: 100vh;
+}
+@media screen and (max-width: 992px) {
+  .sign-up, .forgot-pass {
+    justify-content: center;
+    overflow: auto;
+  }
+}
+.sign-up .form__section, .forgot-pass .form__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2rem;
+  max-width: 80%;
+}
+@media screen and (max-width: 992px) {
+  .sign-up .form__section, .forgot-pass .form__section {
+    position: absolute;
+    padding: 0;
+  }
+}
+.sign-up .form__section .form__logo, .forgot-pass .form__section .form__logo {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+.sign-up .form__section .form__logo img, .forgot-pass .form__section .form__logo img {
+  max-width: 80%;
+}
+.sign-up .form__section .sign-up-form, .forgot-pass .form__section .sign-up-form {
+  padding: 1rem 2rem;
+  max-width: 100%;
+}
+.sign-up .form__section .sign-up-form .form-control, .forgot-pass .form__section .sign-up-form .form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.sign-up .form__section .sign-up-form .form-control label, .forgot-pass .form__section .sign-up-form .form-control label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+.sign-up .form__section .sign-up-form .form-control input, .forgot-pass .form__section .sign-up-form .form-control input {
+  border: 2px solid #d2deea;
+  border-radius: 4px;
+  display: block;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.sign-up .form__section .sign-up-form .form-control input:focus, .forgot-pass .form__section .sign-up-form .form-control input:focus {
+  border-color: lightsalmon;
+}
+.sign-up .form__section .sign-up-form .form-control i, .forgot-pass .form__section .sign-up-form .form-control i {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  visibility: hidden;
+}
+.sign-up .form__section .sign-up-form .form-control small, .forgot-pass .form__section .sign-up-form .form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.6rem;
+}
+.sign-up .form__section .sign-up-form .join, .forgot-pass .form__section .sign-up-form .join {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #fff;
+  background: #515d82;
+  border-radius: 0.8rem;
+  width: 100%;
+  padding: 2rem 0;
+  border: 2px solid #515d82;
+}
+.sign-up .form__section .sign-up-form .join:hover, .forgot-pass .form__section .sign-up-form .join:hover {
+  background: transparent;
+  color: #515d82;
+}
+.sign-up .form__section .sign-up-form .form-control.success input, .forgot-pass .form__section .sign-up-form .form-control.success input {
+  border-color: #2ecc71;
+}
+.sign-up .form__section .sign-up-form .form-control.success i.fa-check-circle, .forgot-pass .form__section .sign-up-form .form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.sign-up .form__section .sign-up-form .form-control.error input, .forgot-pass .form__section .sign-up-form .form-control.error input {
+  border-color: #e74c3c;
+}
+.sign-up .form__section .sign-up-form .form-control.error i.fa-exclamation-circle, .forgot-pass .form__section .sign-up-form .form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.sign-up .form__section .sign-up-form .form-control.error small, .forgot-pass .form__section .sign-up-form .form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+.sign-up .form__section .terms, .forgot-pass .form__section .terms {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+.sign-up .form__section .terms label, .forgot-pass .form__section .terms label {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.sign-up .form__section .already-signup, .forgot-pass .form__section .already-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-up .form__section .already-signup p, .forgot-pass .form__section .already-signup p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #515d82;
+}
+.sign-up .form__section .already-signup .signup-login-btn, .forgot-pass .form__section .already-signup .signup-login-btn {
+  border: 0.15rem solid #515d82;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  background: none;
+  cursor: pointer;
+  padding: 2rem 4rem;
+}
+.sign-up .form__section .already-signup .signup-login-btn:hover, .forgot-pass .form__section .already-signup .signup-login-btn:hover {
+  background: #515d82;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

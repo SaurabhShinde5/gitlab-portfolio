@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>form builder</title>
+  </head>
+  <body>
+    <section class="popup" id="popup">
+      <div class="popup__contents">
+        <div class="popup-header">
+          <h4>Edit Input Field</h4>
+          <button class="close-popup" onclick="closePopup()">&times;</button>
+        </div>
+        <form class="input__container" id="form" name="formInfo">
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            class="input"
+          />
+          <label for="place" class="place">Placeholder</label>
+          <input
+            type="text"
+            placeholder="place"
+            name="place"
+            id="place"
+            class="input"
+          />
+          <label for="type" class="input-type">Input type</label>
+          <select name="input-type" id="input-type" class="input">
+            <option value="text" selected>Text</option>
+            <option value="email">Email</option>
+            <option value="password">Password</option>
+            <option value="checkbox">Checkbox</option>
+            <option value="radio">Radio</option>
+          </select>
+          <label for="input-required" class="input-required"
+            >Input required</label
+          >
+          <select name="input-required" id="input-required" class="input">
+            <option value="true" selected>Yes</option>
+            <option value="false">No</option>
+          </select>
+          <div class="popup-buttons">
+            <button class="save" id="submit">Save changes</button>
+            <button class="cancel" type="reset">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <main class="main">
+      <div class="container">
+        <section class="left">
+          <div class="left__heading">Custom Editors</div>
+          <div class="left__wrapper">
+            <div class="left__container">
+              <div class="left__container-heading">form elements</div>
+              <div class="draggable-inputs">
+                <div class="input-boxes">
+                  <div class="input-box logo" draggable="true">logo</div>
+                  <div class="input-box textbox" draggable="true">textbox</div>
+                  <div class="input-box radio" draggable="true">radio</div>
+                  <div class="input-box checkbox" draggable="true">
+                    checkbox
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="right">
+          <div class="section-nav">
+            <ul class="nav__list">
+              <li
+                class="list__item--1"
+                id="saveData"
+                onclick="saveItemsInLocalStorage()"
+              >
+                Save
+              </li>
+              <a href="preview.html" class="list__item--2" target="_blank"
+                ><li>Publish</li></a
+              >
+              <li class="list__item--3" id="cancelData">Cancel</li>
+            </ul>
+          </div>
+          <div class="file-input header">
+            <div class="empty" id="header-1"></div>
+            <div class="empty" id="header-2"></div>
+            <div class="empty" id="header-3"></div>
+          </div>
+          <div class="main-body">
+            <div class="bg-input mid-left" id="bg-input">
+              <input type="file" name="banner" id="banner" class="banner-img" />
+            </div>
+            <div class="text-input mid-right">
+              <h4>Demo Dec</h4>
+              <div class="text-drop"></div>
+              <button class="register">Register</button>
+            </div>
+          </div>
+          <div class="file-input footer">
+            <div class="empty" id="footer-1"></div>
+            <div class="empty" id="footer-2"></div>
+            <div class="empty" id="footer-3"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/model.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/component.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+/*********** shake effect *****************/
+
+.shake-img {
+  &:hover {
+    animation: shake 0.2s infinite linear;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+    transform: translate(3px, 3px);
+  }
+  25% {
+    transform: rotate(1deg);
+    transform: translate(0px, -1px);
+  }
+  50% {
+    transform: rotate(-1deg);
+    transform: translate(-2px, 1px);
+  }
+  75% {
+    transform: rotate(0deg);
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: rotate(1deg);
+    transform: translate(-1px, -2px);
+  }
+}
+
+/* overlay image effect*/
+
+.overlay-drop {
+  position: relative;
+  .overlay-content {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    height: 0%;
+    width: 100%;
+    background-color: #555;
+    z-index: 10;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+  }
+  &:hover {
+    .overlay-content {
+      height: 100%;
+    }
+  }
+}
+
+/* change image effect*/
+
+.change-box {
+  position: relative;
+  overflow: hidden;
+  .card-img {
+    transition: 0.6s linear;
+  }
+  .changed-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  &:hover {
+    .card-img {
+      opacity: 0;
+    }
+    .changed-img {
+      opacity: 1;
+    }
+  }
+}
+
+/* flip image effect*/
+
+.flip-box {
+  background: transparent;
+  width: 94%;
+  perspective: 3000px;
+  .flip-box-inner {
+    position: relative;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    .flip-box-front {
+      .flip-img {
+        width: 100%;
+      }
+    }
+    .flip-box-back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      backface-visibility: hidden;
+      text-align: center;
+      background-color: #555;
+      color: white;
+      padding: 1rem;
+      transform: rotateY(180deg);
+      h4 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &:hover {
+    .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+// ******slider effect*****
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  .slider-fix {
+    position: absolute;
+  }
+  #sliding-img {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  }
+  .slider {
+    position: absolute;
+    -webkit-appearance: none;
+    left: 0;
+    z-index: 45;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+/* magnify image effect */
+
+.zoom-box {
+  position: relative;
+  cursor: none;
+  #large-img {
+    background: url("../assets/zoom.jpeg") no-repeat;
+    width: 5rem;
+    height: 5rem;
+    pointer-events: none;
+    position: absolute;
+    border: 4px solid black;
+    border-radius: 100%;
+    opacity: 0;
+  }
+  &:hover {
+    #large-img {
+      opacity: 1;
+    }
+  }
+}

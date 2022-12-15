@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+.popup {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 50%;
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+}
+.popup .popup__contents {
+  background: whitesmoke;
+}
+.popup .popup__contents .popup-header {
+  display: flex;
+  justify-content: space-between;
+  background: #3490dc;
+  padding: 1rem;
+}
+.popup .popup__contents .popup-header h4 {
+  font-size: 500;
+  color: white;
+}
+.popup .popup__contents .popup-header .close-popup {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.popup .popup__contents .input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem;
+  justify-content: flex-start;
+}
+.popup .popup__contents .input__container input, .popup .popup__contents .input__container select {
+  padding: 0.5rem;
+  border-radius: 7px;
+  border: 1px solid lightgray;
+  margin-bottom: 0.5rem;
+}
+.popup .popup__contents .popup-buttons {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: flex-end;
+  margin: 0.5rem;
+}
+.popup .popup__contents .popup-buttons .save, .popup .popup__contents .popup-buttons .cancel {
+  padding: 0.5rem;
+  background: #3490dc;
+  border: none;
+  color: white;
+  margin-bottom: 0.7rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.popup .popup__contents .popup-buttons .cancel {
+  background: grey;
+}
+
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.main .container {
+  display: flex;
+}
+.main .container .left {
+  position: fixed;
+  width: 20%;
+  margin: 2rem;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+.main .container .left .left__heading {
+  border-bottom: 1px solid grey;
+  background: lightgrey;
+  padding: 1rem;
+}
+.main .container .left .left__container {
+  margin: 1rem;
+  border: 2px solid grey;
+}
+.main .container .left .left__container .left__container-heading {
+  padding: 1rem 2rem;
+  background: lightgrey;
+  border: 2px solid grey;
+  text-align: left;
+  color: blue;
+}
+.main .container .left .left__container .draggable-inputs {
+  border-top: 2px solid grey;
+}
+.main .container .left .left__container .input-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 0.5rem;
+  font-size: 10px;
+}
+.main .container .left .left__container .input-boxes .input-box {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid grey;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  background: whitesmoke;
+  margin: 0.5rem 0.8rem;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .right {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0;
+  background: #d6d6d6;
+  width: 75%;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+.main .container .right .section-nav {
+  margin: 1rem;
+}
+.main .container .right .section-nav .nav__list {
+  display: flex;
+  justify-content: flex-end;
+  background: lightgray;
+}
+.main .container .right .section-nav .nav__list .list__item--1, .main .container .right .section-nav .nav__list .list__item--3, .main .container .right .section-nav .nav__list .list__item--2 {
+  padding: 0.7rem;
+  background: skyblue;
+  margin: 0.5rem;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+}
+.main .container .right .section-nav .nav__list .list__item--2 {
+  text-decoration: none;
+  color: white;
+  background: lightgreen;
+}
+.main .container .right .section-nav .nav__list .list__item--3 {
+  background: grey;
+}
+.main .container .right .file-input {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  background: rgb(114, 114, 114);
+  margin: 1rem;
+}
+.main .container .right .file-input .empty {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 15vh;
+  padding: 0.5rem;
+  background: white;
+  margin: 0.5rem;
+  border-radius: 7px;
+}
+.main .container .right .file-input .empty .input-file {
+  padding: 2rem;
+  cursor: pointer;
+}
+.main .container .right .main-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 97%;
+  min-height: 40vh;
+  border: 1px solid grey;
+  border-radius: 7px;
+  background: grey;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+.main .container .right .main-body .mid-left {
+  background: white;
+  height: 95%;
+  border-radius: 7px;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.main .container .right .main-body .mid-left .banner-image {
+  height: 12rem;
+}
+.main .container .right .main-body .mid-right {
+  min-height: 95%;
+  background: white;
+  border-radius: 7px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 1rem 1rem 0;
+  padding: 0.5rem;
+}
+.main .container .right .main-body .mid-right .register {
+  padding: 0.5rem 4rem;
+  border-radius: 0.5rem;
+  outline: none;
+  background: orange;
+  cursor: pointer;
+  border-color: orange;
+}
+.main .container .right .main-body .mid-right .register:hover {
+  background: transparent;
+  color: orange;
+  border-color: black;
+}
+.main .container .right .main-body .mid-right .text-drop {
+  min-height: 15rem;
+  min-width: 12rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .container .right .main-body .mid-right .text-drop .board__item {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  min-width: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+  padding: 0.625rem;
+  transition: 0.3s all ease;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.main .container .right .main-body .mid-right .text-drop .board__item .board-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+.main .container .right .main-body .mid-right .text-drop .board__item .board-content .input-and-label {
+  display: flex;
+}
+.main .container .right .main-body .mid-right .text-drop .board__item .board-content .title {
+  padding: 0.3125rem;
+  color: white;
+}
+.main .container .right .main-body .mid-right .text-drop .board__item .board-content .edit-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main .container .right .main-body .mid-right .text-drop .board__item .board-content .edit-buttons .popup-edit {
+  background: blue;
+  padding: 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+.main .container .right .main-body .mid-right .text-drop .board__item .board-content .edit-buttons .popup-edit .fa-solid {
+  color: white;
+}
+.main .container .right .main-body .mid-right .text-drop .board__item .board-content .close-mark {
+  padding: 0.2rem;
+  cursor: pointer;
+  background: red;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.main .container .right .main-body .mid-right .text-drop .board__item .inputArea {
+  padding: 0.5rem;
+  border-radius: 7px;
+  border: none;
+}
+
+.main__preview .previewSubmit {
+  padding: 0.5rem 1rem;
+  margin-left: 50%;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main__preview .class-for-header-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.main__preview .logos-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.main__preview .logos-preview .logo-img {
+  max-width: 7rem;
+}
+.main__preview .form__input {
+  display: flex;
+  margin: 4rem auto;
+  justify-content: space-around;
+}
+.main__preview .form__input .previewedForm {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.main__preview .form__input .previewedForm input, .main__preview .form__input .previewedForm .popup .popup__contents .input__container select, .popup .popup__contents .input__container .main__preview .form__input .previewedForm select {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.main__preview .form__input .banner--display {
+  max-height: 25rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  outline: none;
+  text-decoration: none;
+}
+
+.background {
+  background-color: #12181b;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+}
+.background .title {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10%;
+}
+.background .display {
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+}
+.background .container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 15rem;
+}
+.background .container .tile {
+  border: 1px solid white;
+  min-width: 5rem;
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.background .controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.background .controls button {
+  color: white;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #ff3860;
+}
+.background .playerX {
+  color: #09c372;
+}
+.background .playerO {
+  color: #498afb;
+}
+.background .hide {
+  visibility: hidden;
+}/*# sourceMappingURL=style.css.map */
