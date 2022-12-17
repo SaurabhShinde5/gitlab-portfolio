@@ -138,7 +138,6 @@ button {
 }
 
 //home section css
-
 .home {
   background-image: url("../assets/bg2.png");
   background-size: cover;
@@ -609,6 +608,7 @@ button {
         }
         .card__description {
           font-size: $fs-small;
+          line-height: 1.6;
         }
         .card__btn {
           display: flex;

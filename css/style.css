@@ -864,6 +864,7 @@ button {
 }
 .work .work__portfolio .portfolio__cards .card .card__description {
   font-size: 0.8rem;
+  line-height: 1.6;
 }
 .work .work__portfolio .portfolio__cards .card .card__btn {
   display: flex;
